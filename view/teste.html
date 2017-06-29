@@ -1,0 +1,38 @@
+<html ng-app="app">
+<head>
+    <script src="../js/angular.js"></script>
+    <script src="../js/angular-animate.min.js"></script>
+    <script src="../js/angular-aria.min.js"></script>
+    <script src="../js/angular-material.min.js"></script>
+    <script src="../js/testeAngular.js"></script>
+    <link rel="stylesheet" href="../css/angular-material.css">
+    
+</head>
+<body>
+    <div layout="row">
+    <div ng-controller="teste" flex="50">
+        <md-content>
+            <md-toolbar>
+                <h1>teste barrinha</h1>
+            </md-toolbar>
+            <md-input-container class="md-block" flex-gt-sm>
+                <label>Login</label>
+                <input ng-model="login.usuario">
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt-sm>
+            <label>Senha</label>
+            <input ng-model="login.senha">
+            </md-input-container>
+            <md-button class="md-raised md-primary" ng-click="metodoTeste(login)">
+                     Efetuar Login
+            </md-button>
+        </md-content>
+        
+        
+    	{{msg}}
+	</div>
+
+
+    
+</body>
+</html>
